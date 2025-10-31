@@ -12,11 +12,11 @@ for index, row in dataFile.iterrows():
     MEDIDA1 = row['MEDIDA1']
     MEDIDA2 = row['MEDIDA2']
 
-    if FIGURA == 't':  # triángulo
+    if FIGURA == 't':
         area = triangulo(MEDIDA1, MEDIDA2)
-    elif FIGURA == 'r':  # rectángulo
+    elif FIGURA == 'r':
         area = rectangulo(MEDIDA1, MEDIDA2)
-    elif FIGURA == 'c':  # círculo
+    elif FIGURA == 'c': 
         area = circulo(MEDIDA1)
     else:
         area = None
